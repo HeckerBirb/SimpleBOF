@@ -10,7 +10,7 @@ auth = b'TRUN .'
 for i in range(50):
   s = so.socket(so.AF_INET, so.SOCK_STREAM)
 
-  a_len = 300 * i
+  a_len = 300 * (i + 1)
   print "Attempting this many A's: ", a_len
 
   the_req = auth + b'A' * a_len
